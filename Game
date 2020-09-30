@@ -1,6 +1,6 @@
 import java.util.*;
 class PROJECTKBC{
-    public static void main(){
+    public static void main(String args[]){
         int q,l=0;
         long count=0;
         char lock,ans,a,b,c,d;
