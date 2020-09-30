@@ -1,0 +1,294 @@
+import java.util.*;
+class PROJECTKBC{
+    public static void main(){
+        int q,l=0;
+        long count=0;
+        char lock,ans,a,b,c,d;
+        Scanner obj=new Scanner(System.in);
+        long startTime = System.currentTimeMillis();
+        System.out.println("Welcome to Kaun Banega Crorepati");
+        System.out.println("Enter your name");
+        String x=obj.nextLine();
+        System.out.println("Welcome " +x);
+        System.out.println("RULES --- Enter the alphabet alongside your choice.");
+        System.out.println("Press l for 50-50 lifeline , but it can only be used once in the entire game!!!");
+        System.out.println("      --- There are 3 checkpoints in the game (after every 4 questions)");
+        System.out.println("          each checkpoint confirms the money that you will take home");
+        System.out.println("");
+        System.out.println("So " +x+ "..... Let's begin");
+        System.out.println("1st question for 5,000 rupees , is now being displayed on your screen ---");
+        System.out.println("");
+        System.out.println("Q - By which of these nicknames is Nagpur known as ? ");
+        System.out.println("A- Diamond city            B- Orange city");
+        System.out.println("C- Pink city                    D- City of lakes");
+        ans=obj.next().charAt(0);
+        if(ans=='l'){
+        System.out.println("A- Diamond city     B- Orange city");
+        l++;
+    }
+        else
+        System.out.println("Taala Laga dia jae ?");
+        lock=obj.next().charAt(0);
+        if(lock=='b'||lock=='B')
+        {
+        System.out.println("Congratulations , that is the right answer");
+        count=5000;
+        System.out.println("2nd question for 10,000 rupees , is now being displayed on your screen ---");
+        System.out.println("");
+        System.out.println("Q - Which pieces are maximum in number at start of a chess game ? ");
+        System.out.println("A- Rook               B- Knight");
+        System.out.println("C- Pawn              D- Bishop");
+        ans=obj.next().charAt(0);
+         if(ans=='l' && l==0){
+        System.out.println("A- Rook     C- Pawn");
+        l++;
+    }
+        System.out.println("Taala Laga dia jae ?");
+        lock=obj.next().charAt(0);
+        if(lock=='c'||lock=='C')
+        {
+
+        System.out.println("Congratulations , that is the right answer");
+        count=10000;
+        System.out.println("3rd question for 20,000 rupees , is now being displayed on your screen ---");
+        System.out.println("");
+        System.out.println("Q - IC chips used in computers are usually made of  ? ");
+        System.out.println("A- Silicon               B- Lead");
+        System.out.println("C- Iron                    D- Plastic");
+        ans=obj.next().charAt(0);
+         if(ans=='l'&& l==0){
+        System.out.println("A- Silicon         D- Plastic");
+        l++;
+    }
+        System.out.println("Taala Laga dia jae ?");
+        lock=obj.next().charAt(0);
+        if(lock=='a'||lock=='A')
+        {
+        
+        System.out.println("Congratulations , that is the right answer");
+        count=20000; 
+        System.out.println("");
+        System.out.println("4th question for 40,000 rupees , is now being displayed on your screen ---");
+        System.out.println("");
+        System.out.println("Q - Which of these elements has the highest melting point ? ? ");
+        System.out.println("A- Platinum            B- Aluminium");
+        System.out.println("C- Gold                   D- Silver");
+        ans=obj.next().charAt(0);
+        if(ans=='l' && l==0){
+        System.out.println("A- Platinum           C- Gold");
+        l++;
+    }
+        System.out.println("Taala Laga dia jae ?");
+        lock=obj.next().charAt(0);
+        if(lock=='a'||lock=='A')
+        {
+        System.out.println("Congratulations , that is the right answer");
+        count=40000;
+        System.out.println("you have reached the 1st checkpoint of rs "+count);
+        System.out.println("");
+        System.out.println("5th question for 80,000 rupees , is now being displayed on your screen ---");
+        System.out.println("");
+        System.out.println("Q - A _____ is approximately a million bytes? ");
+        System.out.println("A- Gigabyte               B- Megabyte ");
+        System.out.println("C- Terabyte               D- Kilobyte");
+        ans=obj.next().charAt(0);
+        if(ans=='l'&& l==0){
+        System.out.println("A- Gigabyte          B- Megabyte");
+        l++;
+    }
+        System.out.println("Taala Laga dia jae ?");
+        lock=obj.next().charAt(0);
+        if(lock=='b'||lock=='B')
+        {
+        System.out.println("Congratulations , that is the right answer");
+        count=80000;
+        System.out.println("");
+        System.out.println("6th question for 1,60,000 rupees , is now being displayed on your screen ---");
+        System.out.println("");
+        System.out.println("Q - What can you hear when a bell rings in vaccum ? ");
+        System.out.println("A- Loud sound                B- Usual sound ");
+        System.out.println("C- Vibrating sound        D- No sound");
+        ans=obj.next().charAt(0);
+        if(ans=='l'&& l==0){
+        System.out.println("A- C- Vibrating sound          D- No sound");
+        l++;
+    }
+        System.out.println("Taala Laga dia jae ?");
+        lock=obj.next().charAt(0);
+        if(lock=='d'||lock=='D')
+        {
+        System.out.println("Congratulations , that is the right answer");
+        count=160000;
+        System.out.println("");
+        System.out.println("7th question for 3,20,000 rupees , is now being displayed on your screen ---");
+        System.out.println("");
+        System.out.println("Q - How many languages feature on language panel of RBI currency notes? ");
+        System.out.println("A- 8               B- 10 ");
+        System.out.println("C- 15            D- 12");
+        ans=obj.next().charAt(0);
+        if(ans=='l'&& l==0){
+        System.out.println("C- 15        D- 12");
+        l++;
+    }
+        System.out.println("Taala Laga dia jae ?");
+        lock=obj.next().charAt(0);
+        if(lock=='c'||lock=='C')
+        {
+        System.out.println("Congratulations , that is the right answer");
+        count=320000;
+        System.out.println("");
+        System.out.println("8th question for 6,40,000 ,is now being displayed on your screen ---");
+        System.out.println(" Q - Which of these PM was the grandchild of another PM");
+        System.out.println(" A-Benazir Bhutto                    B-Indira Gandhi");
+        System.out.println(" C-Chandrika Kumartunga    D- Rajiv Gandhi");
+        ans=obj.next().charAt(0);
+        if(ans=='l'&& l==0){
+        System.out.println("A- Benazir Bhutto         D- Rajiv Gandhi");
+        l++;
+    }
+        System.out.println("Taala Laga dia jae ?");
+        lock=obj.next().charAt(0);
+        if(lock=='d'||lock=='D')
+        {
+        System.out.println("Congratulations , that is the right answer");
+        count=640000;
+        
+        System.out.println("you have reached the 2nd checkpoint of rs "+count);
+        System.out.println("");
+        System.out.println("9th question for 12,50,000 rupees , is now being displayed on your screen ---");
+        System.out.println("");
+        System.out.println("Q - Which of these is the national tree of India? ");
+        System.out.println("A- Sandalwood               B- Peepal ");
+        System.out.println("C- Mango                        D- Banyan");
+        ans=obj.next().charAt(0);
+        if(ans=='l'&& l==0){
+        System.out.println("B- Peepal       D- Banyan");
+        l++;
+    }
+        System.out.println("Taala Laga dia jae ?");
+        lock=obj.next().charAt(0);
+        if(lock=='d'||lock=='D')
+        {
+        System.out.println("Congratulations , that is the right answer");
+        count=1250000;
+        System.out.println("");
+        System.out.println("10th question for 25,00,000 rupees , is now being displayed on your screen ---");
+        System.out.println("");
+        System.out.println("Q - What constitutes the atomic mass in an atom? ");
+        System.out.println("A- Neutrons                                 B- Protons ");
+        System.out.println("C- Neutrons + Protons                 D- Electrons");
+        ans=obj.next().charAt(0);
+        if(ans=='l'&& l==0){
+        System.out.println("C- Neutrons + Protons                D- Electrons");
+        l++;
+    }
+        System.out.println("Taala Laga dia jae ?");
+        lock=obj.next().charAt(0);
+        if(lock=='c'||lock=='C')
+        {
+        System.out.println("Congratulations , that is the right answer");
+        count=2500000;
+        System.out.println("");
+        System.out.println("11th question for 50,00,000 rupees , is now being displayed on your screen ---");
+        System.out.println("");
+        System.out.println("Q - How many Vertebras are there in the spinal cord of a human being? ");
+        System.out.println("A- 31               B- 41 ");
+        System.out.println("C- 51              D-21 ");
+        ans=obj.next().charAt(0);
+        if(ans=='l'&& l==0){
+        System.out.println("A- 31            B- 41");
+        l++;
+    }
+        System.out.println("Taala Laga dia jae ?");
+        lock=obj.next().charAt(0);
+        if(lock=='a'||lock=='A')
+        {
+        System.out.println("Congratulations , that is the right answer");
+        count=5000000;
+        System.out.println("");
+        System.out.println("12th question for  1 crore rupees , is now being displayed on your screen ---");
+        System.out.println("");
+        System.out.println("Q - When did APJ Abdul Kalam die ? ");
+        System.out.println("A- 3rd August 2015               B- 30th July 2015 ");
+        System.out.println("C- 27th July 2015                  D- 4th July 2015");
+        ans=obj.next().charAt(0);
+        if(ans=='l'&& l==0){
+        System.out.println("B- 30th July 2015                C- 27th July 2015");
+        l++;
+    }
+        System.out.println("Taala Laga dia jae ?");
+        lock=obj.next().charAt(0);
+        if(lock=='c'||lock=='C')
+        {
+        System.out.println("Congratulations , You have WON the KBC........You may avail your money from the CD drive ");
+        count=1000000;
+        }
+        else
+        {
+        System.out.println("ohh , wrong answer...... the right answer is C. 27th July 2015");
+        }}
+        else{
+        System.out.println("ohh , wrong answer...... the right answer is A.31");
+        }}
+        else{
+        System.out.println("ohh , wrong answer...... the right answer is C. Neutrons + protons");
+        }}
+        
+        else 
+        {
+            System.out.println("ohh , wrong answer....... the Right answer is D.Banyan ");
+        }}
+        else
+        {
+        
+        System.out.println("ohh , wrong answer....... the Right answer is D. Rajiv Gandhi ");
+        }}
+        else
+        {
+         System.out.println("ohh , wrong answer....... the Right answer is C.15 ");
+        }}
+         else 
+        {
+         System.out.println("ohh , wrong answer....... the Right answer is D.  No sound");
+        }}
+         else 
+        {
+         System.out.println("ohh , wrong answer....... the Right answer is B. Megabyte");
+        }}
+         else 
+        {
+         System.out.println("ohh , wrong answer....... the Right answer is A. Platinum");
+        }}
+         else 
+        {
+         System.out.println("ohh , wrong answer....... the Right answer is A. Silicon");
+        }}
+         else 
+        {
+         System.out.println("ohh , wrong answer....... the Right answer is C. Pawn ");
+        }}
+         else 
+        {
+         System.out.println("ohh , wrong answer....... the Right answer is B.Orange  city");
+         }
+         if(count>=640000&&count<10000000)
+         {
+             System.out.println("your winnning amount is 640000");
+            }
+            else if (count>=40000)
+            {
+                
+             System.out.println("your winnning amount is 40000");
+             
+            }
+            else 
+            {
+                
+             System.out.println("your winnning amount is 0 ");
+            }
+                long elapsedTime = System.currentTimeMillis() - startTime;
+        long elapsedSeconds = elapsedTime / 1000;
+        long secondsDisplay = elapsedSeconds % 60;
+        long elapsedMinutes = elapsedSeconds / 60;
+        System.out.println("Time taken is :"+elapsedMinutes+":"+secondsDisplay);
+         }}
